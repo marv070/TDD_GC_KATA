@@ -1,3 +1,3 @@
 def greene_county
-	Array.new(100, 1)
+	our_array = [*(1..100)]
 end

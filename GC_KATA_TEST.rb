@@ -13,6 +13,16 @@ class GC_kate_test < Minitest::Test
   	assert_equal(1, results[0])
   end
 
+  def test_second_element_in_array_is_2
+  	results = greene_county
+  	assert_equal(2, results[1])
+  end
+
+  def test_last_element_in_array_is_100
+  	results = greene_county
+  	assert_equal(100, results[-1])
+  end
+
 
 
 
