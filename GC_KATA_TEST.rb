@@ -39,11 +39,17 @@ class GC_kate_test < Minitest::Test
   	assert_equal("county", results[4])
   end
 
+  def test_check_other_numbers_divisable_by_5_are_county
+  	results = greene_county
+    assert_equal("county", results[39])
+    assert_equal("county", results[84])
+  end
 
-
-
-
-
+  def test_to_check_numbers_in_array_divisable_by_3_and_5_are_greene_county
+  	results = greene_county
+  	assert_equal("greene_county", results[14])
+  	#assert_equal("greene_county", results[34])
+  end
 
 
 end
