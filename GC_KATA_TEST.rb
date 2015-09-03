@@ -23,6 +23,11 @@ class GC_kate_test < Minitest::Test
   	assert_equal(100, results[-1])
   end
 
+  def test_third_element_in_array_is_greene
+  	results = greene_county
+  	assert_equal("greene", results[2])
+  end
+
 
 
 
