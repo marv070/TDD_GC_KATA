@@ -28,6 +28,12 @@ class GC_kate_test < Minitest::Test
   	assert_equal("greene", results[2])
   end
 
+  def test_element_mod_3
+  	results = greene_county
+  	assert_equal("greene", results[-2])
+  	assert_equal("greene", results[56])
+  end
+
 
 
 
